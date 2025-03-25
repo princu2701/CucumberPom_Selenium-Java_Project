@@ -1,106 +1,81 @@
-Automated Testing for Cart Functionality
+# 🛒 Automated Testing for Cart Functionality
 
-Project Overview
+## 📌 Project Overview  
+This project automates the cart functionality of an e-commerce website using **Selenium WebDriver** and **Cucumber BDD**. It validates core cart operations such as:  
+- Adding products  
+- Removing products  
+- Updating product quantities  
+- Proceeding to checkout  
 
-This project automates the testing of the cart functionality of an e-commerce website using Selenium WebDriver and Cucumber BDD. It ensures that core features such as adding, removing, updating products, and proceeding to checkout work as expected.
+The goal is to ensure a seamless shopping experience by catching potential issues through automated testing.  
 
-Technologies Used
+---
 
-Selenium WebDriver - For web automation
+## 🛠️ Technologies Used  
+- **Selenium WebDriver** – Web automation tool  
+- **Java** – Programming language  
+- **Cucumber BDD** – Behavior-driven testing framework  
+- **TestNG** – Test execution and assertions  
+- **Maven** – Dependency and build management  
+- **Page Object Model (POM)** – Framework for maintainable code  
 
-Java - Primary programming language
+---
 
-Cucumber BDD - For behavior-driven development
+## ✅ Features Tested  
 
-TestNG - For test execution
+### 1️⃣ Add a Product to the Cart  
+✔️ Searches for a product  
+✔️ Selects the first search result  
+✔️ Adds the product to the cart  
+✔️ Verifies cart count increases  
 
-Maven - Dependency management
+### 2️⃣ Remove a Product from the Cart  
+✔️ Ensures a product is in the cart  
+✔️ Navigates to the cart page  
+✔️ Removes the product  
+✔️ Validates cart count decreases  
 
-Page Object Model (POM) - Structured framework design
+### 3️⃣ Update Product Quantity in the Cart  
+✔️ Modifies product quantity  
+✔️ Checks if the total price updates accordingly  
 
-Features Tested
+### 4️⃣ Verify Empty Cart Message  
+✔️ Ensures an empty cart displays the correct message  
 
-Add a Product to the Cart
+### 5️⃣ Proceed to Checkout  
+✔️ Confirms that clicking **"Proceed to Checkout"** redirects to the checkout page  
 
-Searches for a product
+---
 
-Selects the first product from search results
+## 📂 Folder Structure  
+── src/test/java │ │── StepDefinitions/ # Cucumber step definitions │ │── Runner/ # Cucumber test runner │ │── POMData/ # Page Object Model classes │── src/test/resources │ │── Features/ # Cucumber feature files │── pom.xml # Maven dependencies │── README.md # Project documentation
 
-Adds the product to the cart
 
-Verifies that the product is successfully added and cart count increases
+---
 
-Remove a Product from the Cart
+## 🚀 How to Run the Tests  
+### 1️⃣ Clone the repository  
+```sh
+git clone <https://github.com/princu2701/CucumberPom_Selenium-Java_Project/>
 
-Ensures the user has an item in the cart
-
-Navigates to the cart page
-
-Removes the product from the cart
-
-Validates that the cart count decreases
-
-Update Product Quantity in the Cart
-
-Modifies the quantity of an existing cart item
-
-Verifies that the total price updates correctly
-
-Verify Empty Cart Message
-
-Ensures an empty cart displays the correct message
-
-Proceed to Checkout
-
-Confirms that clicking "Proceed to Checkout" navigates to the checkout page
-
-Folder Structure
-
-Project Root
-│── src/test/java
-│   │── StepDefinitions/  # Cucumber step definitions
-│   │── Runner/           # Cucumber test runner
-│   │── POMData/          # Page Object Model classes
-│── src/test/resources
-│   │── Features/         # Cucumber feature files
-│── pom.xml              # Maven dependencies
-│── README.md            # Project documentation
-
-How to Run the Tests
-
-Clone the repository
-
-git clone <repository-url>
-
-Navigate to the project folder
-
-cd project-folder
-
-Run tests using Maven
-
-mvn test
-
-Prerequisites
-
+## 🔧Prerequisites
 Java (JDK 11 or later)
 
-Maven installed
+##📊 Reporting
+Test results are generated using Extent Reports, providing a detailed view of:
+✔️ Passed test cases
+❌ Failed test cases
+⚠️ Skipped test cases
 
-ChromeDriver/GeckoDriver for browser automation
+##🔮 Future Enhancements
 
-Reporting
+✅ Implement API Testing for cart functionality
 
-Test results are generated using Extent Reports, providing a detailed view of passed, failed, and skipped test cases.
+✅ Add more negative test scenarios
 
-Future Enhancements
+✅ Run tests in parallel for faster execution
 
-Implementing API Testing for cart functionality
+##Author
 
-Adding more negative test scenarios
-
-Running tests in parallel for faster execution
-
-Author
-
-Prince Raj - Software Test Engineer
+###Prince Raj
 
