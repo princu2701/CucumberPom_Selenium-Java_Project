@@ -58,16 +58,16 @@ The goal is to ensure a seamless shopping experience by catching potential issue
 ```sh
 git clone <https://github.com/princu2701/CucumberPom_Selenium-Java_Project/>
 
-## 🔧Prerequisites
+ 🔧Prerequisites
 Java (JDK 11 or later)
 
-##📊 Reporting
+📊 Reporting
 Test results are generated using Extent Reports, providing a detailed view of:
 ✔️ Passed test cases
 ❌ Failed test cases
 ⚠️ Skipped test cases
 
-##🔮 Future Enhancements
+🔮 Future Enhancements
 
 ✅ Implement API Testing for cart functionality
 
@@ -75,7 +75,7 @@ Test results are generated using Extent Reports, providing a detailed view of:
 
 ✅ Run tests in parallel for faster execution
 
-##Author
+Author
 
-###Prince Raj
+Prince Raj
 
